@@ -3,7 +3,9 @@
  */
 package dev.ananda.thread.sample3;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * Created by Ananda on 18-Dec-2019 
@@ -11,7 +13,7 @@ import org.apache.log4j.Logger;
 
 public class Broker {
 	
-	private static Logger log = Logger.getLogger(Broker.class);
+	private static Logger log = LoggerFactory.getLogger(Broker.class);
 	
 	private String packet;
     

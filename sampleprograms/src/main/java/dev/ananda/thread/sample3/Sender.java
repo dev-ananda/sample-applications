@@ -3,9 +3,10 @@
  */
 package dev.ananda.thread.sample3;
 
-import java.util.concurrent.ThreadLocalRandom;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import org.apache.log4j.Logger;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by Ananda on 18-Dec-2019 
@@ -13,7 +14,7 @@ import org.apache.log4j.Logger;
 
 public class Sender implements Runnable {
 
-	private static Logger log = Logger.getLogger(Sender.class);
+	private static Logger log = LoggerFactory.getLogger(Sender.class);
 	private Broker broker;
 	/**
 	 * @param broker2
