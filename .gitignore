@@ -4,3 +4,5 @@
 .idea
 /target/
 *.class
+/sampleprograms/sampleprograms.iml
+/sampleprograms/target/classes/META-INF/sampleprograms.kotlin_module
