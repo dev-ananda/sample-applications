@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dev.ananda.kafka;
+
+option java_package = "com.azibo.classification.proto";
+option java_outer_classname = "TransactionTag";
+
+message ClassificationUpdateDto {
+	string id = 1;
+	string category1 = 2;
+	string category2 = 3;
+	string propertyId = 4;
+	string unitId = 5;
+	repeated string ruleIds = 6;
+}
