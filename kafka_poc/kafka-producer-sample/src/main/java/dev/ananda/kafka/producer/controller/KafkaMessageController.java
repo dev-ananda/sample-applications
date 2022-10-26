@@ -3,7 +3,7 @@ package dev.ananda.kafka.producer.controller;
 import java.util.UUID;
 
 import dev.ananda.kafka.producer.service.KafkaMessageProducer;
-import com.azibo.classification.proto.TransactionTag.ClassificationUpdateDto;
+import dev.ananda.classification.proto.TransactionTag.ClassificationUpdateDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,9 +39,9 @@ public class KafkaMessageController {
 				.addRuleIds( "rule" +counter )
 				.build();
 
-		//topic = "classification.data.proto.internal.message.tagged.transaction";
+		//topic = "dev-classification-test";
 
-		messageProducer.publishProtoMessage( "classification.data.proto.external.transaction.tag.r1", request );
+		messageProducer.publishProtoMessage( "dev-classification-test", request );
 
 		/*for (int i = 1; i < 15; i++){
 			messageProducer.publishProtoMessage(topic,newMessage+" -- "+ i);

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package dev.ananda.kafka;
 
-option java_package = "com.azibo.classification.proto";
+option java_package = "dev.ananda.classification.proto";
 option java_outer_classname = "TransactionTag";
 
 message ClassificationUpdateDto {

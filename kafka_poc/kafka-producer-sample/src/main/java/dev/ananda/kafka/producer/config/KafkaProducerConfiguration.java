@@ -39,7 +39,7 @@ public class KafkaProducerConfiguration <T extends Message>
         props.put( ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaProperties.getBootstrapServers());
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaProtobufSerializer.class);
-        props.put( CommonClientConfigs.GROUP_ID_CONFIG, "classification-service-group" );
+        props.put( CommonClientConfigs.GROUP_ID_CONFIG, "classification-test" );
         props.put( KafkaProtobufSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://localhost:8081" );
 
         // security configurations
